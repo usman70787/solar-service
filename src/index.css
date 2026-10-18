@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #0B2545;
+    --color-secondary: #13315C;
+    --color-accent: #F2A900;
+    --color-green: #2E7D5B;
+    --color-bg: #F7F5F0;
+    --color-surface: #FFFFFF;
+    --color-text: #1A1F2B;
+    --color-muted: #5B6475;
+    --color-border: #E3E0D8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #F7F5F0;
+    color: #1A1F2B;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Custom clamp heading scale */
+.text-hero-headline {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.15;
+}
+
+.text-section-title {
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+/* Custom subtle card transition */
+.card-hover {
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(11, 37, 69, 0.08), 0 8px 10px -6px rgba(11, 37, 69, 0.04);
+}

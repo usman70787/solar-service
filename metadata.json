@@ -1,0 +1,6 @@
+{
+  "name": "Helios Power Africa",
+  "description": "Reliable solar power installations for homes, businesses, and farms across Africa. Engineered Tier-1 solar panels and lithium battery storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
